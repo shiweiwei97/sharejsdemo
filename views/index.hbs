@@ -1,0 +1,11 @@
+<h2>Hello ShareJS!!!</h2>
+
+<div style="width:400px;height:300px" id="editor"></div>
+
+<script>
+    var editor = ace.edit("editor");
+
+    sharejs.open('hello', 'text', function(error, doc) {
+        doc.attach_ace(editor);
+    });
+</script>
